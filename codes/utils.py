@@ -1,6 +1,7 @@
 import re
-from colorama import Fore
 import pyfiglet as fig
+
+from colorama import Fore
 
 figlet = fig.Figlet()
 fonts = figlet.getFonts()
@@ -12,7 +13,7 @@ LOGIN_MESSAGE = f""" {Fore.GREEN}{figlet.renderText("Telethon-Script Login")}{Fo
 """
 
 
-def ValidatePhone(phone:str) -> bool:
+def ValidatePhone(phone: str) -> bool:
     """
     Validate user input is a valid phone number
     """
