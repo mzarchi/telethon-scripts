@@ -10,7 +10,7 @@
     > <sub>At this step, you must get **api_id** and **api_hash** from [Telegram Apps](https://my.telegram.org/auth?to=apps)</sub>
 
 ## Contributors tasks:
-- [ ] Login to telegram with 2FA
+- [*] Login to telegram with 2FA
 - [ ] Get all user contacts
 - [ ] Get all user channels
 - [ ] Get all user groups
