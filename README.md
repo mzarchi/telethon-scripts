@@ -10,7 +10,6 @@
     > <sub>At this step, you must get **api_id** and **api_hash** from [Telegram Apps](https://my.telegram.org/auth?to=apps)</sub>
 
 ## Contributors tasks:
-This repo has ```dev``` branch <b>for pull requests</b> 
 - [x] Login to telegram with 2FA ([login](https://github.com/mzarchi/telethon-scripts/blob/main/codes/login.py#L21))
 - [x] Send Message to another user ([sendMessage](https://github.com/mzarchi/telethon-scripts/blob/main/codes/login.py#L42))
 - [ ] Get all user contacts
