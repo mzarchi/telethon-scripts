@@ -1,1 +1,16 @@
-# telethon-scripts
+<p>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/mzarchi/telethon-scripts">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/mzarchi/telethon-scripts">
+</p>
+
+# Telethon Scripts
+* Clone repo by git clone https://github.com/mzarchi/telethon-scripts.git
+* Install require libs by ```pip install -r requirements.txt```
+* Copy .env.example to .env (```cp .env.example .env```) and put your <b>api_id</b> and <b>api_hash</b>
+    > <sub>At this step, you must get **api_id** and **api_hash** from [Telegram Apps](https://my.telegram.org/auth?to=apps)</sub>
+
+## Contributors tasks:
+- [ ] Login to telegram with 2FA
+- [ ] Get all user contacts
+- [ ] Get all user channels
+- [ ] Get all user groups
