@@ -16,5 +16,5 @@
 * [x] Get new messages ([getNewMessages](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L61))
 * [ ] Get all user contacts
 * [ ] Get all user channels
-* [ ] Get all user groups
 * [ ] Get channel all posts
+* [ ] Get all user groups
