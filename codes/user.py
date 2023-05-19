@@ -40,11 +40,20 @@ class UserManager:
         print("Successfully Connect!\nSession created at sessions dir")
 
     def sendMessage(self, username: str, message: str):
+        """Send message to another user
+        ~~~~~~~~~~~~~~~~~~~~~
+        Args:
+            :param `username`: (str) telegram username like @mhzarchi
+            :param `message`: (str) message text like Hello
+
+        Returns:
+            :return: (class) telethon.tl.patched.Message
+        """
 
         client = TelegramClient(self.__session, self.__api_id, self.__api_hash)
         client.start()
 
-        client.send_message(
+        return client.send_message(
             entity=client.get_entity(username),
             message=message
         )
