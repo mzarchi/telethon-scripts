@@ -14,8 +14,13 @@ LOGIN_MESSAGE = f""" {Fore.GREEN}{figlet.renderText("Telethon-Script Login")}{Fo
 
 
 def ValidatePhone(phone: str) -> bool:
-    """
-    Validate user input is a valid phone number
+    """Validate user input is a valid phone number
+    ~~~~~~~~~~~~~~~~~~~~~
+    Args:
+        :param `phone`: (str) telegram phone number
+
+    Returns:
+        :return: (bool)
     """
     reg = r"^\+[0-9]{12,12}$"
     # example: +981234567891
