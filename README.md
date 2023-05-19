@@ -10,8 +10,10 @@
     > <sub>At this step, you must get **api_id** and **api_hash** from [Telegram Apps](https://my.telegram.org/auth?to=apps)</sub>
 
 ## Contributors tasks:
-- [x] Login to telegram with 2FA ([login](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L21))
-- [x] Send Message to another user ([sendMessage](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L42))
-- [ ] Get all user contacts
-- [ ] Get all user channels
-- [ ] Get all user groups
+
+* [x] Login to telegram with 2FA ([login](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L21))
+* [x] Send Message to another user ([sendMessage](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L42))
+* [x] Get new messages ([getNewMessages](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L61))
+* [ ] Get all user contacts
+* [ ] Get all user channels
+* [ ] Get all user groups
