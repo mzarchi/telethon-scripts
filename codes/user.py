@@ -1,7 +1,7 @@
 import sys
 import telethon
 
-from telethon.sync import TelegramClient
+from telethon.sync import TelegramClient, events
 from .utils import ValidatePhone, LOGIN_MESSAGE
 
 
@@ -57,3 +57,26 @@ class UserManager:
             entity=client.get_entity(username),
             message=message
         )
+
+    def getNewMessages(self):
+        """Get new message
+        ~~~~~~~~~~~~~~~~~~~~~
+        If you want to get all new
+        message like channel or group
+        remove try/except block and print event
+        """
+         
+        with TelegramClient(self.__session, self.__api_id, self.__api_hash) as client:
+            print("Start ..")
+
+            @client.on(events.NewMessage(pattern="(?i).*"))
+            async def handler(event):
+                try:
+                    msg = "New Message! \n"
+                    msg += f"ChatId: {event.peer_id.user_id} \n"
+                    msg += f"Text: {event.message.message} \n"
+                    print(msg)
+                except:
+                    print("Chat is not contact!")
+
+            client.run_until_disconnected()
