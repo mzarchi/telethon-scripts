@@ -15,5 +15,5 @@
 * [x] Send Message to another user ([sendMessage](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L42))
 * [x] Get new messages ([getNewMessages](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L61))
 * [ ] Get all user contacts
-* [ ] Get all user channels
+* [ ] Get all user channels([Getalluserchannels)])
 * [ ] Get all user groups
