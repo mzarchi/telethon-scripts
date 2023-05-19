@@ -9,7 +9,7 @@ class UserManager:
     """
     """
 
-    __api_hash = Nones
+    __api_hash = None
     __api_id = None
     __session = None
 
