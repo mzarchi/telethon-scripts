@@ -8,6 +8,11 @@ userManage = UserManager(
     session="989361445010"
 )
 
+"""
+    For run this program you should login
+    to your telegram account first and this 
+    code create session file in main dir
+"""
 # userManage.login()
 # userManage.sendMessage(username="@mhzarchi", message="Hello")
 userManage.getNewMessages()
