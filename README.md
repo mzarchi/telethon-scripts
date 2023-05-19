@@ -17,3 +17,4 @@
 * [ ] Get all user contacts
 * [ ] Get all user channels
 * [ ] Get all user groups
+* [ ] Get channel all posts
