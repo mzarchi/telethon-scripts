@@ -1,6 +1,7 @@
 import sys
 import telethon
 
+from telethon import functions
 from telethon.sync import TelegramClient, events
 from .utils import ValidatePhone, LOGIN_MESSAGE
 
@@ -39,7 +40,7 @@ class UserManager:
             client.sign_in(password=password)
         print("Successfully Connect!\nSession created at sessions dir")
 
-    def sendMessage(self, username: str, message: str):
+    def sendMessage(self, username: str = "@mhzarchi", message: str = "Hello from GitHub :)"):
         """Send message to another user
         ~~~~~~~~~~~~~~~~~~~~~
         Args:
@@ -92,3 +93,10 @@ class UserManager:
             entity = client.get_entity(username)
             msg = f"ChatId: {entity.id}"
             print(msg)
+
+    def getContactsList(self):
+        with TelegramClient(self.__session, self.__api_id, self.__api_hash) as client:
+            contacts = client(functions.contacts.GetContactsRequest(hash=0))
+            for contact in contacts.users:
+                txt = f"Id: {contact.id}, Mutual: {contact.mutual_contact}, Number: {contact.phone}, Name: {contact.first_name} {contact.last_name}"
+                print(txt)
