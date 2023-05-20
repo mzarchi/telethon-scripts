@@ -14,6 +14,7 @@
 * [x] Login to telegram with 2FA ([login](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L21))
 * [x] Send Message to another user ([sendMessage](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L42))
 * [x] Get new messages ([getNewMessages](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L61))
+* [x] Get user data by username ([getUserData](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L84))
 * [ ] Get all user contacts
 * [ ] Get all user channels
 * [ ] Get channel all posts
