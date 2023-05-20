@@ -65,7 +65,7 @@ class UserManager:
         message like channel or group
         remove try/except block and print event
         """
-         
+
         with TelegramClient(self.__session, self.__api_id, self.__api_hash) as client:
             print("Start ..")
 
@@ -80,3 +80,15 @@ class UserManager:
                     print("Chat is not contact!")
 
             client.run_until_disconnected()
+
+    def getUserData(self, username: str):
+        """Send message to another user
+        ~~~~~~~~~~~~~~~~~~~~~
+        Args:
+            :param `username`: (str) telegram username like @mhzarchi
+        """
+        with TelegramClient(self.__session, self.__api_id, self.__api_hash) as client:
+            username = str(input("Insert @username or exit: "))
+            entity = client.get_entity(username)
+            msg = f"ChatId: {entity.id}"
+            print(msg)
