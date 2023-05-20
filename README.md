@@ -4,9 +4,12 @@
 </p>
 
 # Telethon Scripts
+
 * Clone repo by ```git clone https://github.com/mzarchi/telethon-scripts.git```
 * Install require libs by ```pip install -r requirements.txt```
-* Copy .env.example to .env (```cp .env.example .env```) and put your <b>api_id</b> and <b>api_hash</b>
+
+* Copy .env.example to .env (`` `cp .env.example .env` ``) and put your <b>api_id</b> and <b>api_hash</b>
+
     > <sub>At this step, you must get **api_id** and **api_hash** from [Telegram Apps](https://my.telegram.org/auth?to=apps)</sub>
 
 ## Contributors tasks:
@@ -15,7 +18,7 @@
 * [x] Send Message to another user ([sendMessage](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L42))
 * [x] Get new messages ([getNewMessages](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L61))
 * [x] Get user data by username ([getUserData](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L84))
-* [ ] Get all user contacts
+* [x] Get all user contacts ([getContactsList](https://github.com/mzarchi/telethon-scripts/blob/main/codes/user.py#L97))
 * [ ] Get all user channels
 * [ ] Get channel all posts
 * [ ] Get all user groups
