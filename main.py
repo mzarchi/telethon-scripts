@@ -14,5 +14,4 @@ userManage = UserManager(
     code create session file in main dir
 """
 # userManage.login()
-# userManage.sendMessage(username="@mhzarchi", message="Hello")
-userManage.getNewMessages()
+userManage.getContactsList()
