@@ -4,7 +4,7 @@
 </p>
 
 # Telethon Scripts
-* Clone repo by git clone https://github.com/mzarchi/telethon-scripts.git
+* Clone repo by ```git clone https://github.com/mzarchi/telethon-scripts.git```
 * Install require libs by ```pip install -r requirements.txt```
 * Copy .env.example to .env (```cp .env.example .env```) and put your <b>api_id</b> and <b>api_hash</b>
     > <sub>At this step, you must get **api_id** and **api_hash** from [Telegram Apps](https://my.telegram.org/auth?to=apps)</sub>
